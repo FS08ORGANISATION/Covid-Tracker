@@ -1,0 +1,441 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 200px 1700px 425px;
+}
+
+#container-header{
+    
+  
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px;
+
+    
+}
+
+.container-header{
+    background-image: url(./covid-fond/fond-bleuClair.svg);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 10% 55% 20% 15% ;
+    place-items: center;
+
+}
+
+    
+
+.logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.navbar{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.bouton-lang{
+    grid-column: 4/5;
+    grid-row: 1/2;
+  
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+ul .accueil{
+    color: rgb(18, 18, 175);
+}
+ul a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+    
+.bouton{
+    padding: 0px 0px 10px 5px;
+    border-radius: 10px;
+    border-color: rgb(18, 18, 175);
+    color: rgb(18, 18, 175);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.derniere-info{
+    background-image: url(/covid-fond/fond-jaune.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* place-items: center; */
+    
+    font-size: 12px;
+}
+.paragraph1{
+    grid-column: 2/3;
+    text-align: center;
+    
+    color: cornflowerblue;
+}
+.titre1{
+    grid-column: 2/3;
+    text-align: center; 
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#container-main{
+    background-color: azure;
+    display: grid;
+    grid-template-rows: 500px 600px 400px 200px;
+    
+}
+
+.container-covid{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px;
+    
+}
+.left{
+    grid-column: 1/2;
+}
+.right{
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+.titre2{
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(42, 89, 230, 1);
+}
+.image2{
+    margin-left: 300px;
+
+}
+
+.right .paragraph2{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+.bouton-gauche, .bouton-demarrer-test{
+
+    padding: 10px 200px 10px 200px;
+    background-image: url(./covid-fond/fond-bleu.svg);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-style: none;
+}
+.right-button{
+    margin: 20px 20px 0px 80px;
+    border-radius: 5px;
+}
+
+.container-covid .nurse{
+    width: 100%;
+    height: 500px;
+}
+
+.container-symptone{
+
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 200px 100px;
+    place-items: center;
+
+}
+
+.titre3{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.symptome1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.symptome1 .thermometre{
+    height: 150px;
+}
+
+.title3, .titre5{
+    text-align: center;
+    color: rgb(42, 89, 230, 1);
+    font-weight: bold;
+}
+
+.symptome2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.symptome3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.symptome4{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.container-symptone .legende{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+
+.recommandation-officielle{
+    background-image: url(./covid-fond/fond-bleu.svg);
+    
+    background-size: 100%;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px 300px;
+    place-items: center;
+}
+
+.recommandation-titre{
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.recommandation-texte{
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.recommandation-contact{
+
+    grid-column: 2/3;
+    grid-row: 2/3; 
+}
+
+.recommandation-titre{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.paragraph2{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px; 
+    margin-left: 20px;   
+}
+
+.paragraph-particulier{
+
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px; 
+    margin-left: 20px;
+}
+
+.recommandation-texte{
+
+    font-size: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    
+}
+
+.titre4{
+
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.bouton4{
+    background-image: url(./covid-fond/fond-jaune.svg);
+    color: rgb(42, 89, 230, 1);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.lien-sante{
+
+    color: white;
+    text-decoration-color: rgb(255, 255, 0);
+    display: block;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.demarrer-test{
+    grid-row: 4/5;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    background-image: url(./covid-fond/fond-bleuClair.svg);
+    background-size: 100%;
+}
+
+.demarrer-test-titre{
+    grid-row: 1/2;
+}
+
+.demarrer-test-bouton{
+    grid-row: 3/4;
+}
+
+.demarrer-test-image{
+    grid-row: 2/3;
+}
+
+#container-footer{
+    
+    grid-row: 3/4;
+    display: grid;
+    grid-column: 20% 30% 50%;
+    grid-template-rows: 100px 300px 25px;
+    place-items: center;
+    
+}
+
+.logo2{
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.navbar-container{
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contacts-utiles{
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.contaner-paragraph3{
+
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.image-de-fond{
+
+    grid-column: 1/4;
+    grid-row: 3/4;
+   
+}
+
+.bouton-lang2{
+
+    padding: 0px 0px 10px 5px;
+    border-radius: 10px;
+    border-color: rgb(18, 18, 175);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.liste2{
+    display: block;
+    padding: 20px;
+
+}
+
+.liste2 li{
+    padding-top: 20px;
+}
+
+.liste2 .accueil2{
+    
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.contacts-utiles .contact1{
+
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: darkgreen;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    
+}
+
+.contact-title{
+
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(42, 89, 230, 1);
+    padding: 30px;
+    text-align: center;
+}
+
+.paragraph-contact{
+
+    font-weight: bolder;
+    font-size: 16px; 
+    text-align: center;
+    padding: 20px;
+}
+
+.paragraph3{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+}
+
+.logo2{
+
+    padding-top: 20px;
+}
+
+i{
+    padding-left: 20px;
+    color: rgb(235, 235, 8);
+    
+}
